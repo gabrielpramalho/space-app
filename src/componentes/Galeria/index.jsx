@@ -19,7 +19,9 @@ const Galeria = ({ fotos = []}) =>{
             <GaleriaContainer>
                 <SecaoFluida>
                     <Titulo>Navegue pela galeria</Titulo>
-                    {fotos.map(foto => foto.titulo)}
+                    <ul>
+                        {fotos.map(foto => <li>{foto.titulo}</li>)}
+                    </ul>
                 </SecaoFluida>
                 <Populares />
 
