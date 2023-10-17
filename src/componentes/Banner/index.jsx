@@ -4,6 +4,7 @@ const FigureEstilizada = styled.figure`
     background-image: ${props => `url(${props.$backgroundImage})`};
     flex-grow: 1;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     min-height: 328px;
