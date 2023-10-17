@@ -11,7 +11,7 @@ const SecaoFluida = styled.section`
     flex-grow: 1;
 `
 
-const Galeria = () =>{
+const Galeria = ({ fotos = []}) =>{
 
     return(
         <>
@@ -19,7 +19,7 @@ const Galeria = () =>{
             <GaleriaContainer>
                 <SecaoFluida>
                     <Titulo>Navegue pela galeria</Titulo>
-
+                    {fotos.map(foto => foto.titulo)}
                 </SecaoFluida>
                 <Populares />
 
