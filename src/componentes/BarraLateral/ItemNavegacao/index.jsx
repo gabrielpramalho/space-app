@@ -10,6 +10,11 @@ const ItemListaEstilizado = styled.li`
     display: flex;
     align-items: center;
     gap: 22px;
+
+    &:hover{
+        color: #7b78e5;
+        cursor: pointer;
+    }
 `
 
 const ItemNavegacao = ({ children, iconeAtivo, iconeInativo, ativo = false}) =>{
