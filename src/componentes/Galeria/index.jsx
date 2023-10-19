@@ -19,7 +19,7 @@ const ContainerGaleria = styled.div`
     gap: 24px;
 `
 
-const Galeria = ({ fotos = [], aoFotoSelecionada}) =>{
+const Galeria = ({ fotos = [], aoFotoSelecionada, aoAlternarFavorito}) =>{
 
     return(
         <>
@@ -30,6 +30,7 @@ const Galeria = ({ fotos = [], aoFotoSelecionada}) =>{
                     <ContainerGaleria>
                         {fotos.map(foto => <Imagem 
                             aoZoomSolicitado={aoFotoSelecionada}
+                            aoAlternarFavorito={aoAlternarFavorito}
                             key={foto.id}
                             foto={foto} 
                         />)}

@@ -45,7 +45,12 @@ const Tags = () => {
 
                 <BlocoTags>
                     {tags.map
-                        (tag => <Tag key={tag.id}>{tag.titulo}</Tag>)
+                        (tag => 
+                            <Tag 
+                                key={tag.id}
+                            >
+                                {tag.titulo}
+                            </Tag>)
                     }
                 </BlocoTags>
             </ContainerSectionTags>
